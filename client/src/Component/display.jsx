@@ -55,7 +55,7 @@ const Display = () => {
                 // Assuming you have an endpoint like /api/users/:userId/payment
                 const userId = responseData._id; // Replace with the correct user ID
                 //console.log(userId);
-                const response = await fetch(`http://localhost:5000/api/auth/users/${userId}`, {
+                const response = await fetch(`https://serverbackend-mfgv.onrender.com/api/auth/users/${userId}`, {
                     method: "PUT", // or PUT depending on your backend setup
                     headers: {
                         "Content-Type": "application/json",
