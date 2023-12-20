@@ -79,7 +79,7 @@ const Display = () => {
         // Call the backend to allow batch change for the user
         try {
             const userId = responseData._id; // Replace with the correct user ID
-            const response = await fetch(`http://localhost:5000/api/auth/users/${userId}/allow-batch-change`, {
+            const response = await fetch(`https://serverbackend-mfgv.onrender.com/api/auth/users/${userId}/allow-batch-change`, {
                 method: "PUT",
                 headers: {
                     "Content-Type": "application/json",
